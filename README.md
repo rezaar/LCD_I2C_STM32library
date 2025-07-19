@@ -1,55 +1,38 @@
-```html
-<!DOCTYPE html>
-<html lang="fa">
-<head>
-  <meta charset="UTF-8">
-  <title>کتابخانه LCD I2C برای STM32</title>
-  <style>
-    body { font-family: Tahoma, sans-serif; direction: rtl; background: #f5f5f5; color: #333; padding: 20px; }
-    h1, h2 { color: #0d47a1; }
-    pre { background: #eee; padding: 10px; border-radius: 5px; overflow-x: auto; }
-    table { border-collapse: collapse; width: 100%; margin-top: 10px; }
-    th, td { border: 1px solid #aaa; padding: 8px; text-align: center; }
-    img { max-width: 100%; }
-  </style>
-</head>
-<body>
+<h1 align="center">📟 کتابخانه LCD I2C برای STM32 (با قابلیت‌های پیشرفته)</h1>
 
-<h1>📟 کتابخانه LCD I2C برای STM32</h1>
-<p>کتابخانه‌ای حرفه‌ای و قابل تنظیم برای نمایش متن، اعداد و شکل‌های دلخواه روی LCD های کاراکتری از طریق رابط I2C</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/stm32f1xx-supported-green?style=flat-square" />
+  <img src="https://img.shields.io/badge/I2C-LCD%20PCF8574-blue?style=flat-square" />
+  <img src="https://img.shields.io/badge/Language-C-blue.svg?style=flat-square" />
+  <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square" />
+</p>
 
-<h2>📦 ویژگی‌ها</h2>
-<ul>
-  <li>نمایش رشته، عدد صحیح و اعشاری</li>
-  <li>کاراکترهای سفارشی</li>
-  <li>اسکرول ساده، چرخشی و رفت‌وبرگشتی</li>
-  <li>بدون نیاز به تغییر در HAL</li>
-</ul>
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/LCD_blue_backlight.jpg" width="300">
+</p>
 
-<h2>⚙️ توابع کتابخانه</h2>
-<table>
-  <tr><th>تابع</th><th>توضیح</th></tr>
-  <tr><td>LCD_Init()</td><td>مقداردهی اولیه</td></tr>
-  <tr><td>LCD_Clear()</td><td>پاک‌سازی نمایشگر</td></tr>
-  <tr><td>LCD_SetCursor(row, col)</td><td>تنظیم مکان‌نما</td></tr>
-  <tr><td>LCD_Print("text")</td><td>نمایش متن</td></tr>
-  <tr><td>LCD_PrintInt(num)</td><td>نمایش عدد صحیح</td></tr>
-  <tr><td>LCD_PrintFloat(val, dp)</td><td>نمایش عدد اعشاری</td></tr>
-  <tr><td>LCD_CreateChar(loc, map[])</td><td>ساخت کاراکتر دلخواه</td></tr>
-  <tr><td>LCD_ScrollText(...)</td><td>اسکرول متن</td></tr>
-</table>
+---
 
-<h2>🧪 پیش‌نیازها</h2>
-<ul>
-  <li>فعالسازی I2C در STM32CubeMX</li>
-  <li>تعریف متغیر global به‌صورت: <code>extern I2C_HandleTypeDef hi2c1;</code></li>
-</ul>
+## 💡 معرفی
 
-<h2>📸 تصویر پروژه</h2>
-<img src="demo.jpg" alt="پروژه LCD I2C STM32">
+این پروژه شامل یک **کتابخانه سبک و حرفه‌ای** برای راه‌اندازی نمایشگرهای LCD کاراکتری 16x2 یا 20x4 با استفاده از ماژول I2C (تراشه PCF8574) بر روی میکروکنترلرهای **STM32 (HAL-based)** است.
 
-<h2>📄 لایسنس</h2>
-<p>MIT License © Reza Ahmadi</p>
+کتابخانه علاوه بر توابع پایه، دارای قابلیت‌های پیشرفته‌ای مانند:
+- اسکرول متن ساده، حلقه‌ای و رفت‌وبرگشتی
+- پشتیبانی از چاپ عدد صحیح و اعشاری
+- تعریف کاراکترهای سفارشی (مثل ♥ یا آیکون‌ها)
+- طراحی ماژولار و قابل توسعه
 
-</body>
-</html>
+---
+
+## ⚙️ ویژگی‌ها
+
+| ویژگی                 | توضیح |
+|-----------------------|-------|
+| ✅ پشتیبانی از HAL    | سازگار با `stm32f1xx_hal` |
+| ✅ LCD های 16x2 و 20x4 | قابل تنظیم در فایل هدر |
+| ✅ اسکرول پیشرفته     | شامل اسکرول ساده، حلقه‌ای، و رفت‌وبرگشتی |
+| ✅ پشتیبانی از UTF-8  | (در صورت افزودن) |
+| ✅ کد تمیز و ماژولار  | مناسب پروژه‌های تجاری و آموزشی |
+
+---

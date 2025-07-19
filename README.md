@@ -7,9 +7,6 @@
   <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square" />
 </p>
 
-<p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/LCD_blue_backlight.jpg" width="300">
-</p>
 
 ---
 

@@ -41,7 +41,7 @@
 ## 🖼️ تصویر پروژه نمونه
 
 <p align="center">
-  <img src="D:\desktop\my library\lcd_i2c\image\demo.jpg" width="400" alt="پروژه LCD I2C با STM32">
+  <img src="image\demo.jpg"  alt="پروژه LCD I2C با STM32">
 </p>
 
 ---
